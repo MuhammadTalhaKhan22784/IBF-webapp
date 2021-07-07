@@ -23,7 +23,7 @@ nav {
   margin-right: 10px;
   margin-top: 0px;
 }
-.headText{
+.headText {
   margin-right: 28px;
 }
 .mynumbers {
@@ -31,7 +31,6 @@ nav {
   flex-direction: column;
   align-items: flex-end;
   padding-right: 40px !important;
-  
 }
 
 .mynumbers a {
@@ -41,7 +40,6 @@ nav {
   font-weight: bold;
   display: flex;
   align-items: center;
-  
 }
 
 .mynumbers a:hover {
@@ -371,14 +369,14 @@ nav {
   /* min-height: 700px; */
   /* float: right; */
 }
-p.space{
+p.space {
   letter-spacing: 0.3rem;
   font-weight: 900;
 }
-p.silver{
+p.silver {
   color: rgb(122, 119, 119) !important;
 }
-button.silver2{
+button.silver2 {
   color: rgb(163, 161, 161) !important;
   background-color: transparent;
 }
@@ -749,7 +747,6 @@ p.slidertext {
 }
 
 .partborder:hover {
-  
   box-shadow: 0 19px 19px #d1d1d1;
   border-right: 5px solid #842529;
 }
@@ -858,7 +855,7 @@ p.positionred {
   color: white;
   left: -30px;
   font-weight: 600;
-  border-radius:  0 10px 0 0 ;
+  border-radius: 0 10px 0 0;
 }
 
 /*section 9*/
@@ -918,7 +915,6 @@ p.positionred {
   padding: 0 !important;
 }
 
-
 .myul1 li {
   color: rgb(122, 119, 119) !important;
   font-size: 1rem;
@@ -965,6 +961,10 @@ span.short {
   margin: 0 20px;
 }
 
+.seceleven .slick-prev, .seceleven .slick-next {
+  display: none !important;
+} 
+
 .seceleven .slick-dots {
   position: absolute;
   bottom: -55px !important;
@@ -1003,15 +1003,14 @@ span.short {
   /* background-color: #efefef63; */
   padding-bottom: 60px;
 }
-.shape2{
+.shape2 {
   position: absolute;
   margin-top: 170px;
   left: -100px;
   width: 40%;
 }
 .secten {
-  background-color: #efefef63;  
-  
+  background-color: #efefef63;
 }
 .mypackage .chatbtn {
   text-align: center;
@@ -1195,26 +1194,25 @@ span.short {
   /* margin-top: 60px; */
   width: 580px !important;
 }
-.div1{
+.div1 {
   margin-left: -240px;
 }
-.div3{
+.div3 {
   margin-left: 240px;
 }
-.div4{
+.div4 {
   margin-left: 480px;
 }
 .stdboxshadow img {
   margin: auto;
 }
-.stdboxshadow h3{
-  color:#842529;
+.stdboxshadow h3 {
+  color: #842529;
   font-size: 1.1rem;
   font-weight: bolder;
   font-family: "Poppins";
-
 }
-.stdboxshadow p{
+.stdboxshadow p {
   color: black;
   font-size: 1rem;
   font-weight: 600;
@@ -1229,17 +1227,21 @@ span.short {
 .studentreview {
   padding: 0 60px;
 }
-.white{
+.white {
   color: #fff;
   font-size: 1rem;
   font-weight: 400;
   font-family: "Poppins";
- 
 }
-.foot a{
+
+.foot p {
+  margin: 0;
+}
+
+.foot a {
   text-decoration: none;
   background-color: #842529;
-  color: #fff;
+  color: #fff !important;
   font-size: 1rem;
   height: 7%;
   width: 3rem;
@@ -1250,29 +1252,32 @@ span.short {
   position: absolute;
   right: 14%;
 }
-.foot a i:hover{
+
+.foot a:hover {
+color: white;
+}
+
+.foot a i:hover {
   background-color: #842529;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
 }
 
-.foot{
-  
+.foot {
   padding-top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 7vh;
-
 }
-.zero{
+.zero {
   margin: 0;
   padding: 0;
 }
 .secfifteen {
   background-image: url("images/footer.png");
-  height: 853px;
+  height: max-content;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1298,7 +1303,7 @@ span.short {
   font-size: 18px;
   margin-top: 15px;
 }
-.icontext{
+.icontext {
   font-size: 13px;
 }
 .lastseca a:hover {
@@ -1312,16 +1317,16 @@ span.short {
   margin-top: 40px;
 }
 
-fieldset h3{
+fieldset h3 {
   font-size: 0.8rem !important;
   font-weight: 700 !important;
   font-style: italic;
 }
-fieldset input{
+fieldset input {
   font-size: 1.2rem !important;
   font-weight: 900;
 }
-::placeholder{
+::placeholder {
   color: #777;
   font-size: 1rem;
   font-weight: 900;
@@ -1391,7 +1396,6 @@ p {
 }
 p.myheadp {
   font-family: "lato", sans-serif !important;
-  
 }
 /* h3 {
   font-family: "poppins", sans-serif !important;
