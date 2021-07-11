@@ -3,17 +3,17 @@ h3 {
   font-family: "Poppins" !important;
 }
 nav {
-  background-color: #f9f8f6ab;
+  background-color: #f1f1f1ab; 
   position: absolute !important;
   width: 100% !important;
 }
 .navbar {
   position: relative;
   /* min-height: 110px !important; */
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 1px solid transparent;
   z-index: 999;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .headerimg {
   margin-right: 10px;
@@ -36,7 +36,7 @@ nav {
 .mynumbers a {
   color: #000;
   /* padding-bottom: 15px; */
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -130,7 +130,7 @@ nav {
 
 .firstsec .first_sub {
   position: absolute;
-  top: 180px;
+  top: 195px;
   right: 0;
   left: 0;
 }
@@ -148,7 +148,7 @@ nav {
 
 .bannerpara {
   color: #fff;
-  font-size: 1.1rem !important;
+  font-size: 1rem !important;
   margin-top: 35px;
   margin-bottom: 35px;
   font-weight: 300;
@@ -236,20 +236,24 @@ nav {
 }
 /*inputs*/
 #msform input {
-  padding: 15px;
+  
+  padding: 15px 15px 5px 0; 
   border: unset;
-  border-bottom: 1px solid #efefef !important;
-  border-radius: 3px;
+  border-bottom: 1px solid #cecccc !important;
+  border-radius: 0px;
   margin-bottom: 10px;
-  width: 100%;
+  width: 90%;
   box-sizing: border-box;
   font-family: montserrat;
   color: #2c3e50;
-  font-size: 13px;
-  margin-top: 15px;
+  font-size: 1rem;
+  margin-top: 10  px;
 }
 #msform input:focus-visible {
+  outline: none;
+  border-radius: 0px;
   border: unset !important;
+  border-bottom: 1.5px solid #842529 !important;
 }
 #progressbar li.active.first::before {
   content: " ";
@@ -276,17 +280,19 @@ nav {
   padding: 10px 34px;
   display: flex;
   cursor: pointer;
-  margin: 10px 14px;
-  font-size: 1rem;
+  margin: 25px 0 0 50px;
+  font-size: 0.8rem !important;
   letter-spacing: 2px;
   box-shadow: -10px 10px #000 !important;
   border-bottom: 1px solid #842529 !important;
   font-family: "lato", sans-serif !important;
+  text-transform: capitalize;
 }
 #msform .action-button:hover,
 #msform .action-button:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 3px #842529;
 }
+
 
 /*headings*/
 .fs-title {
@@ -295,6 +301,7 @@ nav {
   color: #000;
   margin-bottom: 0px;
   margin-top: 0;
+  margin-left: 5px;
   text-align: left;
   font-weight: 700;
 }
@@ -302,6 +309,7 @@ nav {
   font-weight: normal;
   font-size: 13px;
   margin: 12px 0;
+  margin-left: 5px;
   text-align: left;
   color: #842529 !important;
 }
@@ -370,7 +378,8 @@ nav {
   /* float: right; */
 }
 p.space {
-  letter-spacing: 0.3rem;
+  margin-bottom: -10px !important;
+  letter-spacing: 0.25rem;
   font-weight: 900;
 }
 p.silver {
@@ -384,8 +393,8 @@ button.silver2 {
 .myheadp {
   font-size: 1rem;
   color: #842529;
-  letter-spacing: 1px;
-  font-weight: 600;
+  letter-spacing: 0px;
+  font-weight: 900;
   font-family: "poppins", sans-serif !important;
 }
 
@@ -396,12 +405,13 @@ button.silver2 {
   font-weight: 800;
 }
 
+
 .sidepara {
   color: rgb(58, 55, 55);
   font-size: 1.1rem;
-  margin-top: 35px;
+  margin-top: 20px;
   font-weight: 500;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   font-family: "poppins", sans-serif !important;
 }
 
@@ -424,6 +434,7 @@ button.silver2 {
 
 .sidepara2 {
   color: #000;
+  opacity: 0.9;
   font-weight: 500;
   font-size: 1.1rem;
   font-family: "poppins", sans-serif !important;
@@ -695,7 +706,7 @@ p.slidertext {
 }
 
 .body-slide-links {
-  bottom: -10px !important;
+  bottom: 0px !important;
   padding: 0px 0 0 50px;
   position: absolute;
 
@@ -810,14 +821,15 @@ p.slidertext {
 
 .seceight .slick-dots {
   position: absolute;
+  
   bottom: 460px !important;
   display: block;
   width: 10% !important;
   padding: 0;
-  margin: 0;
+  margin: 10px 0;
   list-style: none;
   text-align: center;
-  right: 10px !important;
+  right: 100px !important;
 }
 
 .seceight .slick-dots li button:before {
@@ -1192,16 +1204,16 @@ span.short {
   /* margin-top: 0px; */
   text-align: center;
   /* margin-top: 60px; */
-  width: 580px !important;
+  width: 680px !important;
 }
 .div1 {
-  margin-left: -240px;
+  margin-left: -440px;
 }
 .div3 {
-  margin-left: 240px;
+  margin-left: 440px;
 }
 .div4 {
-  margin-left: 480px;
+  margin-left: 680px;
 }
 .stdboxshadow img {
   margin: auto;
@@ -1315,6 +1327,8 @@ color: white;
 }
 .mylastbtn {
   margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left:  -1px;
 }
 
 fieldset h3 {
@@ -1325,11 +1339,15 @@ fieldset h3 {
 fieldset input {
   font-size: 1.2rem !important;
   font-weight: 900;
+  text-transform: lowercase;
 }
 ::placeholder {
   color: #777;
   font-size: 1rem;
   font-weight: 900;
+}
+input:focus::placeholder{
+  color: #842529 !important;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -1357,7 +1375,7 @@ a.headerbtn1 {
   border: 0 !important;
   height: 6.6rem !important;
   padding: 18px 48px;
-  color: #000;
+  color: #fff;
   font-family: "Poppins";
 }
 
