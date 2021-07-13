@@ -2,8 +2,13 @@
 h3 {
   font-family: "Poppins" !important;
 }
+
+.icon-text {
+  font-family: "lato", sans-serif !important;
+
+}
 nav {
-  background-color: #f1f1f1ab; 
+  background-color: #f1f1f1ab;
   position: absolute !important;
   width: 100% !important;
 }
@@ -224,7 +229,7 @@ nav {
   background: white;
   border: 0 none;
   border-radius: 0px;
-  padding: 20px 30px;
+  padding: 40px 30px;
   box-sizing: border-box;
   width: 100%;
   box-shadow: 21px 20px 25px -31px #888;
@@ -236,18 +241,18 @@ nav {
 }
 /*inputs*/
 #msform input {
-  
-  padding: 15px 15px 5px 0; 
+  padding: 15px 15px 5px 0;
   border: unset;
   border-bottom: 1px solid #cecccc !important;
   border-radius: 0px;
   margin-bottom: 10px;
   width: 90%;
+  font-family: "lato", sans-serif !important;
   box-sizing: border-box;
   font-family: montserrat;
-  color: #2c3e50;
-  font-size: 1rem;
-  margin-top: 10  px;
+  color: #a7a4a4;
+  font-size: 0.9rem;
+  margin-top: 10 px;
 }
 #msform input:focus-visible {
   outline: none;
@@ -257,16 +262,16 @@ nav {
 }
 #progressbar li.active.first::before {
   content: " ";
-  width: 0px;
+  width: 0;
   height: 0;
   position: absolute;
-  right: -25px;
+  right: -26px;
   z-index: 1;
   top: 0;
   /* background: ; */
   border-top: 20px solid transparent;
-  border-left: 25px solid #842529;
-  border-bottom: 17px solid transparent;
+  border-left: 26px solid #842529;
+  border-bottom: 25px solid transparent;
 }
 
 /*buttons*/
@@ -293,24 +298,25 @@ nav {
   box-shadow: 0 0 0 2px white, 0 0 0 3px #842529;
 }
 
-
 /*headings*/
 .fs-title {
-  font-size: 30px;
+  font-size: 2rem;
   text-transform: capitalize;
-  color: #000;
+  color: #030504;
   margin-bottom: 0px;
   margin-top: 0;
-  margin-left: 5px;
+  margin-left: 10px;
   text-align: left;
+  font-family: "lato", sans-serif !important;
   font-weight: 700;
 }
 .fs-subtitle {
-  font-weight: normal;
-  font-size: 13px;
+  font-weight: 400 !important;
+  font-size: 0.9rem;
   margin: 12px 0;
-  margin-left: 5px;
+  margin-left: 10px;
   text-align: left;
+  font-family: "lato", sans-serif !important;
   color: #842529 !important;
 }
 /*progressbar*/
@@ -324,16 +330,17 @@ nav {
 }
 #progressbar li {
   list-style-type: none;
-  color: #000;
-  text-transform: uppercase;
-  font-size: 13px;
-  width: 38.5%;
+  color: #9b9999;
+  text-transform: capitalize;
+  font-size: 1rem;
+  width: 38.4%;
   float: left;
   position: relative;
-  padding: 9px 10px;
+  padding: 13px 0px;
   background: #efefef;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
+  font-family: "lato", sans-serif !important;
 }
 
 #progressbar li:first-child:after {
@@ -343,7 +350,8 @@ nav {
 #progressbar li.active,
 #progressbar li.active {
   background: #842529;
-  color: white;
+  color: #fff;
+  font-family: "lato", sans-serif !important;
 }
 
 #msform {
@@ -401,10 +409,9 @@ button.silver2 {
 .sidehead {
   color: #000;
   font-size: 3rem;
-  font-family: "lato", sans-serif !important;
+  font-family: "poppins", sans-serif !important;
   font-weight: 800;
 }
-
 
 .sidepara {
   color: rgb(58, 55, 55);
@@ -412,7 +419,7 @@ button.silver2 {
   margin-top: 20px;
   font-weight: 500;
   margin-bottom: 20px;
-  font-family: "poppins", sans-serif !important;
+  font-family: "lato", sans-serif !important;
 }
 
 .sidepara1 {
@@ -494,12 +501,22 @@ button.silver2 {
 .philosphy-box {
   text-align: center;
   margin-top: 40px;
-  padding: 25px 80px;
+  margin-right: -40px;
+  padding: 25px 0px;
   height: 155px;
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #842529, #fff) 10;
 }
 
 .philosphy-box:hover {
-  box-shadow: 10px 10px 25px #efefef;
+  /* box-shadow: 10px 10px 25px grey; */
+
+  -moz-box-shadow: 0 0 10px grey;
+  -webkit-box-shadow: 0 0 10px grey;
+  box-shadow: 0 0 10px grey;
+
+  border: none;
+  cursor: pointer !important;
 }
 .philosphy-box:active {
   box-shadow: 10px 10px 25px #efefef;
@@ -508,6 +525,14 @@ button.silver2 {
 .philosphy-box p {
   margin-top: 10px;
   font-weight: 800;
+}
+
+.philosphy-box i {
+  font-size: 3rem;
+}
+
+.philosphy-box:hover i {
+  color: #842529 !important;
 }
 
 .philosphy-box img {
@@ -709,7 +734,7 @@ p.slidertext {
   bottom: 0px !important;
   padding: 0px 0 0 50px;
   position: absolute;
-
+  cursor: pointer;
   left: 250px;
 }
 .body-slide-links span {
@@ -805,24 +830,32 @@ p.slidertext {
 /*section 8*/
 
 .insboxshadow {
-  padding: 70px 20px;
-  border: 1px solid transparrent;
-  margin: 0 15px;
+  width: 90% !important;
+  padding: 50px 20px;
+  /* border: 1px solid #842529; */
+  margin: 0 15px !important;
   text-align: center;
   margin-top: 60px;
+
+  border: 2px solid;
+  border-radius: 10px;
+  border-image: linear-gradient(45deg, #842529, #fff) 10;
 }
 .insboxshadow img {
   margin: auto;
 }
 
 .insboxshadow:hover {
-  box-shadow: 0px 0px 15px #efefef;
+  -moz-box-shadow: 0 0 10px grey;
+  -webkit-box-shadow: 0 0 10px grey;
+  box-shadow: 0 0 10px grey;
+  border: none;
 }
 
 .seceight .slick-dots {
   position: absolute;
-  
-  bottom: 460px !important;
+
+  bottom: 500px !important;
   display: block;
   width: 10% !important;
   padding: 0;
@@ -855,12 +888,13 @@ p.slidertext {
 }
 
 .seceight {
+  padding-top: 30px;
   padding-bottom: 40px;
 }
 
 p.positionred {
   position: absolute;
-  top: 30px;
+  top: 27px;
   transform: rotate(270deg);
   background: #842529;
   padding: 15px;
@@ -931,9 +965,10 @@ p.positionred {
   color: rgb(122, 119, 119) !important;
   font-size: 1rem;
   display: flex;
+  align-items: baseline;
   margin: 20px 0px;
   font-weight: 600;
-  font-family: "poppins", sans-serif !important;
+  font-family: "lato", sans-serif !important;
 }
 
 .myul1 li img {
@@ -973,9 +1008,10 @@ span.short {
   margin: 0 20px;
 }
 
-.seceleven .slick-prev, .seceleven .slick-next {
+.seceleven .slick-prev,
+.seceleven .slick-next {
   display: none !important;
-} 
+}
 
 .seceleven .slick-dots {
   position: absolute;
@@ -1084,8 +1120,9 @@ span.short {
   height: 40px;
   overflow: hidden;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
+  font-family: "poppins", sans-serif !important;
 }
 .item-title2 {
   text-align: right;
@@ -1112,6 +1149,7 @@ span.short {
   color: #333333;
   font-size: 1.1rem;
   font-weight: 500;
+  font-family: "poppins", sans-serif !important;
 }
 
 .item-title3 i {
@@ -1126,8 +1164,9 @@ span.short {
 }
 .brief {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 10px 15px;
+  font-family: "lato", sans-serif !important;
 }
 
 .mybutton1 a {
@@ -1204,16 +1243,19 @@ span.short {
   /* margin-top: 0px; */
   text-align: center;
   /* margin-top: 60px; */
-  width: 680px !important;
+  width: 380px !important;
 }
 .div1 {
-  margin-left: -440px;
+  margin-left: 20px;
+}
+.div2 {
+  margin-left: 40px;
 }
 .div3 {
-  margin-left: 440px;
+  margin-left: 60px;
 }
 .div4 {
-  margin-left: 680px;
+  margin-left: 80px;
 }
 .stdboxshadow img {
   margin: auto;
@@ -1229,7 +1271,7 @@ span.short {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.05rem;
-  font-family: "Poppins";
+  font-family: "lato", sans-serif !important;
 }
 .stdboxshadow:hover {
   box-shadow: 0px 0px 40px #d1cdcd;
@@ -1266,7 +1308,7 @@ span.short {
 }
 
 .foot a:hover {
-color: white;
+  color: white;
 }
 
 .foot a i:hover {
@@ -1303,11 +1345,14 @@ color: white;
   color: #fff;
   font-size: 56px;
   font-weight: bolder;
+  font-family: "poppins", sans-serif !important;
   font-stretch: ultra-expanded !important;
 }
 .lastseca p {
   color: #fff;
-  font-size: 13px;
+  letter-spacing: 1.2px;
+  font-size: 1rem;
+  font-family: "lato", sans-serif !important;
 }
 
 .lastseca a {
@@ -1328,7 +1373,7 @@ color: white;
 .mylastbtn {
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-left:  -1px;
+  margin-left: -1px;
 }
 
 fieldset h3 {
@@ -1342,12 +1387,13 @@ fieldset input {
   text-transform: lowercase;
 }
 ::placeholder {
-  color: #777;
+  color: rgb(167, 166, 166);
   font-size: 1rem;
-  font-weight: 900;
+  font-weight: bold;
 }
-input:focus::placeholder{
-  color: #842529 !important;
+input:focus::placeholder {
+  color: #70171e !important;
+  font-weight: 600;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -1573,8 +1619,10 @@ a {
     margin-top: 60px;
     width: 100% !important;
   } */
+
   .myfrstrow {
     display: flex;
+    justify-content: right !important;
   }
   .myscndrow {
     display: flex;
@@ -1611,13 +1659,13 @@ a {
     left: -15px;
     z-index: 99999;
   }
-  .insboxshadow {
+  /* .insboxshadow {
     padding: 70px 20px;
     border: 1px solid #efefef;
     margin: 0 0px !important;
     text-align: center;
     margin-top: 30px !important;
-  }
+  } */
   .mypackage {
     border: 1px solid #efefef;
     padding: 35px 25px;
